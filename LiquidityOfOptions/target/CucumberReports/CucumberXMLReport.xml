@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="40.829" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="Verify User is on login page" name="User should be able to click on liquidity login button" time="5.594">
+<system-out><![CDATA[
+Given User is on marketplace login page.....................................passed
+When Click on liquidity login button........................................passed
+Then User is on login page..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User should be able to access the liquidity platform" name="Login with valid credentials - Example #1.1" time="10.835">
+<system-out><![CDATA[
+Given User is on marketplace login page and enters valid username  soundhar.g@qapita.com.passed
+And enters valid password  Test123!.........................................passed
+And Click on Login button...................................................passed
+Then User should login successfully and be on organization page.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify organization page" name="Navigating to particular organization page" time="10.402">
+<system-out><![CDATA[
+Given User is on organization page..........................................passed
+And Click on the organization...............................................passed
+Then User should be navigated to the homepage...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User should be on the home page" name="Verify the user is on homepage" time="3.204">
+<system-out><![CDATA[
+Given User is on home page and Information Modal opens......................passed
+When Click on Close icon of information modal...............................passed
+And Click on Manage Options.................................................passed
+And Select Exercise Options.................................................passed
+And Click on Create New Exercise Event Button...............................passed
+Then User should be navigated to the Exercise Event Creation page...........passed
+]]></system-out>
+</testcase>
+<testcase classname="User should be able to enter all the mandatory fields in the Event Info screen" name="User should be able to enter all the mandatory fields" time="2.56">
+<failure/>
+<system-out><![CDATA[
+Given User is on the event creation page....................................passed
+When User should be able to enter Event Name <EventName>....................passed
+And User should be able to enter the Event Start Date.......................passed
+And User should be able to enter the Event Start Time.......................undefined
+And User should be able to enter the Event End date.........................skipped
+And User should be able to enter the Event End Time.........................skipped
+Then Click on Next button...................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
